@@ -1,0 +1,81 @@
+:root {
+    --sedan-color: #E28625;
+    --suv-color: #006971;
+    --luxury: #004140;
+    --para-color:hsla(0, 0%, 100%, 0.75);
+    --back-head-btn:hsl(0, 0%, 95%);
+}
+* {
+    box-sizing: border-box;
+}
+.big-shoulders-display {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.lexend-deca {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 327px;
+    height: 442px;
+    padding: 0px 48px;
+}
+h1 {
+    color: var(--back-head-btn);
+    text-transform: uppercase;
+}
+p {
+    font-size: 15px;
+    color: var(--para-color);
+    width: 231px;
+    height: 125px;
+}
+button {
+    background-color: var(--back-head-btn);
+    border-radius: 25px;
+    border-color: transparent;
+    width: 146px;
+    height: 48px;
+}
+.sedan {
+    background-color: var(--sedan-color);
+}
+.suv {
+    background-color: var(--suv-color);
+}
+.luxury {
+    background-color: var(--luxury);
+}
+.sedan  button {
+    color: var(--sedan-color);
+}
+.suv  button {
+    color: var(--suv-color);
+}
+.luxury  button {
+    color: var(--luxury);
+}
+button:hover {
+    color: var(--back-head-btn);
+    border: 2px solid var(--back-head-btn);
+    background-color: inherit;
+    cursor: pointer;
+}
+@media (max-width:375px) {
+    main {
+        flex-direction: column;
+    }
+}
